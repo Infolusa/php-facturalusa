@@ -2,7 +2,7 @@
 
 namespace Facturalusa\Administration;
 
-class FacturalusaPrice
+class Price
 {
     /**
      * Holds the Facturalusa Client
@@ -16,7 +16,7 @@ class FacturalusaPrice
      * 
      * @param   Facturalusa
      */
-    public function __construct(FacturalusaClient $facturalusa)
+    public function __construct(Facturalusa\FacturalusaClient $facturalusa)
     {
         $this->facturalusa = $facturalusa;
     }
