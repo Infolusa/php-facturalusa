@@ -1,4 +1,5 @@
 # PHP - Facturalusa
+Biblioteca para ajudar na interacção com o Software de Facturação Online www.facturalusa.pt via PHP.
 
 ## Requesitos
 
@@ -11,7 +12,7 @@
 $ composer require infolusa/php-facturalusa
 ```
 
-## Usage
+## Utilização
 
 ```php
 $facturalusa = new \Facturalusa\FacturalusaClient('api_token');
@@ -21,6 +22,6 @@ $customer->list();
 print_r($facturalusa->response());
 ```
 
-## License
+## Licença
 
 MIT
