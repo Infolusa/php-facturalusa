@@ -88,7 +88,7 @@ class FacturalusaClient Implements FacturalusaResponse
      * 
      * @return  Boolean
      */
-    public function failed()
+    public function fail()
     {
         return $this->httpcode != 200;
     }

@@ -4,7 +4,7 @@ namespace Facturalusa;
 
 interface FacturalusaResponse 
 {
-    public function failed();
+    public function fail();
     public function success();
     public function response();
 }
