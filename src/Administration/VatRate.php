@@ -16,7 +16,7 @@ class VatRate
      * 
      * @param   Facturalusa
      */
-    public function __construct(Facturalusa\FacturalusaClient $facturalusa)
+    public function __construct(\Facturalusa\FacturalusaClient $facturalusa)
     {
         $this->facturalusa = $facturalusa;
     }
