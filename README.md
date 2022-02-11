@@ -39,7 +39,18 @@ Três funções são disponibilizadas:
 2. ```$facturalusa->success()``` - devolve se o pedido foi bem executado
 3. ```$facturalusa->response()``` - devolve a resposta do pedido, tenha ou não falhado
 
-As respostas diferem de endpoint para endpoint, pelo que deve consultar a documentação em https://facturalusa.pt/documentacao/api para saber que conteúdo é devolvido.
+As respostas diferem de endpoint para endpoint, pelo que deve consultar a documentação em https://facturalusa.pt/documentacao/api para saber que conteúdo é devolvido. Por exemplo, no caso de criação de um cliente, a informação devolvida é semelhante:
+```curl
+{
+  "status": true,
+  "data":
+  {
+    "id": ..,
+    "code": ..,
+  }
+}
+```
+Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->id```.
 
 ### Clientes endpoints
 | Função | URL
