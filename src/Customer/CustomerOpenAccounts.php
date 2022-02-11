@@ -46,7 +46,7 @@ class CustomerOpenAccounts
 
     /**
      * Sends an email to the customer with all the open accounts
-     * https://facturalusa.pt/documentacao/api#clientes-contas-aberto-singular
+     * https://facturalusa.pt/documentacao/api#clientes-contas-aberto-enviar-email
      * 
      * @param   Integer id
      * @param   Array   params
