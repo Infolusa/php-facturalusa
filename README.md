@@ -28,6 +28,9 @@ print_r($facturalusa->response());
 // Outro endpoint chamado
 $customer->create(['param1' => 'value1']);
 print_r($facturalusa->response());
+
+// Outra forma de chamar
+(new \Facturalusa\Customer\Customer($facturalusa))->create(['param1' => 'value1']);
 ```
 
 #### Respostas & status
