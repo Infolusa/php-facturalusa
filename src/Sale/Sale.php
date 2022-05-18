@@ -82,6 +82,18 @@ class Sale
     }
 
     /**
+     * Creates a receipt based on an existing sale
+     * https://facturalusa.pt/documentacao/api#vendas-recibo
+     * 
+     * @param   Integer id
+     * @param   Array   params
+     */
+    public function receipt($id, $params)
+    {
+        $this->facturalusa->request("sales/{$id}/receipt", 'POST', $params);
+    }
+
+    /**
      * Creates a credit note of an existing sale
      * https://facturalusa.pt/documentacao/api#vendas-nota-credito
      * 
@@ -158,7 +170,7 @@ class Sale
      */
     public function summary($params)
     {
-        $this->facturalusa->request("sales/summary", 'POST', $params);
+        $this->facturalusa->request('sales/summary', 'POST', $params);
     }
 
     /**
