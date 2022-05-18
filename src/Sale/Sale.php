@@ -152,6 +152,18 @@ class Sale
     }
 
     /**
+     * Signs a document
+     * https://facturalusa.pt/documentacao/api#vendas-assinar-digitalmente
+     * 
+     * @param   Integer id
+     * @param   Array   params
+     */
+    public function sign($id, $params)
+    {
+        $this->facturalusa->request("sales/{$id}/sign", 'POST', $params);
+    }
+
+    /**
      * Creates a debit note of an existing sale
      * https://facturalusa.pt/documentacao/api#vendas-gerar-ref-multibanco
      * 

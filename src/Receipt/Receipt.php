@@ -106,6 +106,18 @@ class Receipt
     }
 
     /**
+     * Signs a document
+     * https://facturalusa.pt/documentacao/api#recibos-assinar-digitalmente
+     * 
+     * @param   Integer id
+     * @param   Array   params
+     */
+    public function sign($id, $params)
+    {
+        $this->facturalusa->request("receipts/{$id}/sign", 'POST', $params);
+    }
+
+    /**
      * Allows to calculate in-real-time the totals of a document
      * https://facturalusa.pt/documentacao/api#recibos-sumario
      * 
@@ -113,7 +125,7 @@ class Receipt
      */
     public function summary($params)
     {
-        $this->facturalusa->request("receipts/summary", 'POST', $params);
+        $this->facturalusa->request('receipts/summary', 'POST', $params);
     }
 
     /**
