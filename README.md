@@ -88,9 +88,11 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 | Sale\Sale->duplicate($id, $array) | https://facturalusa.pt/documentacao/api#vendas-duplicar
 | Sale\Sale->creditNote($id) | https://facturalusa.pt/documentacao/api#vendas-nota-credito
 | Sale\Sale->debitNote($id) | https://facturalusa.pt/documentacao/api#vendas-nota-debito
+| Sale\Sale->receipt($id) | https://facturalusa.pt/documentacao/api#vendas-recibo
 | Sale\Sale->download($id, $array) | https://facturalusa.pt/documentacao/api#vendas-download
 | Sale\Sale->sendEmail($id, $array) | https://facturalusa.pt/documentacao/api#vendas-enviar-email
 | Sale\Sale->sendSms($id, $array) | https://facturalusa.pt/documentacao/api#vendas-enviar-sms
+| Sale\Sale->sign($id, $array) | https://facturalusa.pt/documentacao/api#vendas-assinar-digitalmente
 | Sale\Sale->generateMBReference($id) | https://facturalusa.pt/documentacao/api#vendas-gerar-ref-multibanco
 | Sale\Sale->summary($array) | https://facturalusa.pt/documentacao/api#vendas-sumario
 | Sale\Sale->find($array) | https://facturalusa.pt/documentacao/api#vendas-procurar
@@ -106,6 +108,7 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 | Receipt\Receipt->download($id, $array) | https://facturalusa.pt/documentacao/api#recibos-download
 | Receipt\Receipt->sendEmail($id, $array) | https://facturalusa.pt/documentacao/api#recibos-enviar-email
 | Receipt\Receipt->sendSms($id, $array) | https://facturalusa.pt/documentacao/api#recibos-enviar-sms
+| Receipt\Receipt->sign($id, $array) | https://facturalusa.pt/documentacao/api#recibos-assinar-digitalmente
 | Receipt\Receipt->summary($array) | https://facturalusa.pt/documentacao/api#recibos-sumario
 | Receipt\Receipt->find($array) | https://facturalusa.pt/documentacao/api#recibos-procurar
 | Receipt\Receipt->list($array) | https://facturalusa.pt/documentacao/api#recibos-lista
