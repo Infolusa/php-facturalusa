@@ -3,7 +3,7 @@ Biblioteca para ajudar na interacção com o Software de Facturação Online www
 
 Visualize a API em https://facturalusa.pt/documentacao/api
 
-## Requesitos
+## Requisitos
 
 1. PHP >= 5.3.0
 2. **[Composer](https://getcomposer.org/)**
