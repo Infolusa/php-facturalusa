@@ -187,6 +187,10 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 | Administration\Warehouse->find($array) | https://facturalusa.pt/documentacao/api#administracao-armazens-procurar
 | Administration\Warehouse->list($array) | https://facturalusa.pt/documentacao/api#administracao-armazens-lista
 
+## Ajuda
+
+Se tiver alguma dúvida ou questão, envie-nos uma mensagem através do formulário de contacto, via Suporte Ticket (dentro da sua subscrição) ou via email para geral@facturalusa.pt
+
 ## Licença
 
 MIT
