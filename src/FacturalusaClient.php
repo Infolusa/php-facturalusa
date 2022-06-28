@@ -7,11 +7,11 @@ require_once('FacturalusaResponse.php');
 class FacturalusaClient Implements FacturalusaResponse
 {
     /**
-     * Holds the App URL
+     * Holds the API URL
      * 
      * @var String
      */
-    const APP_URL = 'https://facturalusa.pt/api/v1/';
+    const API_URL = 'https://facturalusa.pt/api/v1/';
 
     /**
      * Holds the CURL Headers
@@ -67,7 +67,7 @@ class FacturalusaClient Implements FacturalusaResponse
         // Append the API token
         $params['api_token'] = $this->apiToken;
 
-        $ch = curl_init(self::APP_URL . $action);
+        $ch = curl_init(self::API_URL . $action);
 
 		curl_setopt($ch, CURLOPT_HTTPHEADER, self::CURL_HEADERS);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type);
