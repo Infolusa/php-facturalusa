@@ -54,4 +54,17 @@ class DocumentType
     {
         $this->facturalusa->request('administration/documentstypes/list', 'POST', $params);
     }
+
+    /**
+     * Communicates a serie by document type to Autoridade Tributária Services
+     * https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-comunicar-serie
+     * 
+     * @param   Integer id
+     * @param   Integer serieId
+     * @param   Array   params
+     */
+    public function communicateSerie($id, $serieId, $params)
+    {
+        $this->facturalusa->request("administration/documentstypes/{$id}/{$serieId}/communicate", 'POST', $params);
+    }
 }
