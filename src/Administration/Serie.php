@@ -62,7 +62,7 @@ class Serie
      * @param   Integer id
      * @param   Array   params
      */
-    public function communicate($id, $params)
+    public function communicate($id)
     {
         $this->facturalusa->request("administration/series/{$id}/communicate", 'POST');
     }
