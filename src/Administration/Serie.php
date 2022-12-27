@@ -56,6 +56,18 @@ class Serie
     }
 
     /**
+     * Communicates a serie to all type of documents in Autoridade Tributária Services
+     * https://facturalusa.pt/documentacao/api#administracao-series-comunicar
+     * 
+     * @param   Integer id
+     * @param   Array   params
+     */
+    public function communicate($id, $params)
+    {
+        $this->facturalusa->request("administration/series/{$id}/communicate", 'POST');
+    }
+
+    /**
      * Finds a serie
      * https://facturalusa.pt/documentacao/api#administracao-series-procurar
      * 

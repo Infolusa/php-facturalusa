@@ -116,7 +116,11 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 ### Subscrição endpoints
 | Função | URL
 | --- | --- |
-| Subscription\Location->list($array) | https://facturalusa.pt/documentacao/api#subscricao
+| Subscription\Location->create($array) | https://facturalusa.pt/documentacao/api#subscricao-locais-criar
+| Subscription\Location->update($id, $array) | https://facturalusa.pt/documentacao/api#subscricao-locais-actualizar
+| Subscription\Location->delete($id) | https://facturalusa.pt/documentacao/api#subscricao-locais-eliminar
+| Subscription\Location->find($array) | https://facturalusa.pt/documentacao/api#subscricao-locais-procurar
+| Subscription\Location->list($array) | https://facturalusa.pt/documentacao/api#subscricao-locais-lista
 
 ### Administração endpoints
 | Função | URL
@@ -133,6 +137,7 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 | Administration\Currency->find($array) | https://facturalusa.pt/documentacao/api#administracao-moedas-procurar
 | Administration\Currency->list($array) | https://facturalusa.pt/documentacao/api#administracao-moedas-lista
 | Administration\DocumentType->update($id, $array) | https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-actualizar
+| Administration\DocumentType->communicateSerie($id, $serieId, $array) | https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-comunicar-serie
 | Administration\DocumentType->find($array) | https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-procurar
 | Administration\DocumentType->list($array) | https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-lista
 | Administration\Employee->create($array) | https://facturalusa.pt/documentacao/api#administracao-colaboradores-criar
@@ -158,6 +163,7 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 | Administration\Serie->create($array) | https://facturalusa.pt/documentacao/api#administracao-series-criar
 | Administration\Serie->update($id, $array) | https://facturalusa.pt/documentacao/api#administracao-series-actualizar
 | Administration\Serie->delete($id) | https://facturalusa.pt/documentacao/api#administracao-series-eliminar
+| Administration\Serie->communicate($id) | https://facturalusa.pt/documentacao/api#administracao-series-comunicar
 | Administration\Serie->find($array) | https://facturalusa.pt/documentacao/api#administracao-series-procurar
 | Administration\Serie->list($array) | https://facturalusa.pt/documentacao/api#administracao-series-lista
 | Administration\Serie->byDocumentType($array) | https://facturalusa.pt/documentacao/api#administracao-series-por-tipo-documento
