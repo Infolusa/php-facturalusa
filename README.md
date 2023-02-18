@@ -31,6 +31,9 @@ print_r($facturalusa->response());
 
 // Outra forma de chamar
 (new \Facturalusa\Customer\Customer($facturalusa))->create(['param1' => 'value1']);
+
+// Também pode ser atribuída a resposta à variável
+$response = $customer->list();
 ```
 
 #### Respostas & status

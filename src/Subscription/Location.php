@@ -26,10 +26,12 @@ class Location
      * https://facturalusa.pt/documentacao/api#subscricao-locais-criar
      * 
      * @param   Array   params
+     * 
+     * @return  Array
      */
     public function create($params)
     {
-        $this->facturalusa->request('subscription/locations/create', 'POST', $params);
+        return $this->facturalusa->request('subscription/locations/create', 'POST', $params);
     }
 
     /**
@@ -38,10 +40,12 @@ class Location
      * 
      * @param   Integer id
      * @param   Array   params
+     * 
+     * @return  Array
      */
     public function update($id, $params)
     {
-        $this->facturalusa->request("subscription/locations/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("subscription/locations/{$id}/update", 'POST', $params);
     }
 
     /**
@@ -49,10 +53,12 @@ class Location
      * https://facturalusa.pt/documentacao/api#subscricao-locais-eliminar
      * 
      * @param   Integer id
+     * 
+     * @return  Array
      */
     public function delete($id)
     {
-        $this->facturalusa->request("subscription/locations/{$id}/delete", 'POST');
+        return $this->facturalusa->request("subscription/locations/{$id}/delete", 'POST');
     }
 
     /**
@@ -60,10 +66,12 @@ class Location
      * https://facturalusa.pt/documentacao/api#subscricao-locais-procurar
      * 
      * @param   Array   params
+     * 
+     * @return  Array
      */
     public function find($params)
     {
-        $this->facturalusa->request('subscription/locations/find', 'POST', $params);
+        return $this->facturalusa->request('subscription/locations/find', 'POST', $params);
     }
 
     /**
@@ -71,9 +79,11 @@ class Location
      * https://facturalusa.pt/documentacao/api#subscricao-locais-lista
      * 
      * @param   Array   params
+     * 
+     * @return  Array
      */
     public function list($params = [])
     {
-        $this->facturalusa->request('subscription/locations/list', 'POST', $params);
+        return $this->facturalusa->request('subscription/locations/list', 'POST', $params);
     }
 }
