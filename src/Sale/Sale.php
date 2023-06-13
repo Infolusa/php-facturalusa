@@ -186,7 +186,7 @@ class Sale
     }
 
     /**
-     * Creates a debit note of an existing sale
+     * Generates MB reference
      * https://facturalusa.pt/documentacao/api#vendas-gerar-ref-multibanco
      * 
      * @param   Integer id
@@ -196,6 +196,19 @@ class Sale
     public function generateMBReference($id)
     {
         return $this->facturalusa->request("sales/{$id}/generate_mbref", 'POST');
+    }
+
+    /**
+     * Generates a MBWay
+     * https://facturalusa.pt/documentacao/api#vendas-gerar-mbway
+     * 
+     * @param   Integer id
+     * 
+     * @return  Array
+     */
+    public function generateMBWay($id)
+    {
+        return $this->facturalusa->request("sales/{$id}/generate_mbway", 'POST');
     }
 
     /**
