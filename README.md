@@ -116,6 +116,25 @@ Para aceder, por exemplo, ao ID criado basta ```$facturalusa->response()->data->
 | Receipt\Receipt->find($array) | https://facturalusa.pt/documentacao/api#recibos-procurar
 | Receipt\Receipt->list($array) | https://facturalusa.pt/documentacao/api#recibos-lista
 
+### Agenda marcações endpoints
+| Função | URL
+| --- | --- |
+| Booking\Booking->create($array) | https://facturalusa.pt/documentacao/api#agenda-marcacoes
+| Booking\Booking->update($id, $array) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-actualizar
+| Booking\Booking->updateDate($id, $array) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-actualizar-data
+| Booking\Booking->delete($id) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-eliminar
+| Booking\Booking->invoiceCreate($id) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-criar-documento
+| Booking\Booking->checkAvailability($array) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-verificar-disponibilidade
+| Booking\Booking->summary($array) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-sumario
+| Booking\Booking->find($array) | https://facturalusa.pt/documentacao/api#agenda-marcacoes-procurar
+
+### Agenda indisponibilidades endpoints
+| Função | URL
+| --- | --- |
+| Booking\BookingUnavailable->create($array) | https://facturalusa.pt/documentacao/api#agenda-indisponibilidades
+| Booking\BookingUnavailable->update($id, $array) | https://facturalusa.pt/documentacao/api#agenda-indisponibilidades-actualizar
+| Booking\BookingUnavailable->delete($id) | https://facturalusa.pt/documentacao/api#agenda-indisponibilidades-eliminar
+
 ### Subscrição endpoints
 | Função | URL
 | --- | --- |
