@@ -23,7 +23,7 @@ class Administration
 
     /**
      * Returns all the information about all the endpoints available in administration
-     * https://facturalusa.pt/documentacao/api#administracao
+     * https://facturalusa.pt/documentacao/api/administracao/todos
      * 
      * @return  Array
      */

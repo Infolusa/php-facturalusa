@@ -23,7 +23,7 @@ class Serie
 
     /**
      * Creates a new serie
-     * https://facturalusa.pt/documentacao/api#administracao-series-criar
+     * https://facturalusa.pt/documentacao/api/administracao-series/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Serie
 
     /**
      * Updates an existing serie
-     * https://facturalusa.pt/documentacao/api#administracao-series-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-series/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Serie
 
     /**
      * Deletes an existing serie
-     * https://facturalusa.pt/documentacao/api#administracao-series-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-series/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Serie
 
     /**
      * Communicates a serie to all type of documents in Autoridade Tributária Services
-     * https://facturalusa.pt/documentacao/api#administracao-series-comunicar
+     * https://facturalusa.pt/documentacao/api/administracao-series/comunicar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -77,7 +77,7 @@ class Serie
 
     /**
      * Finds a serie
-     * https://facturalusa.pt/documentacao/api#administracao-series-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-series/procurar
      * 
      * @param   Array   params
      * 
@@ -90,7 +90,7 @@ class Serie
 
     /**
      * Lists the series
-     * https://facturalusa.pt/documentacao/api#administracao-series-lista
+     * https://facturalusa.pt/documentacao/api/administracao-series/lista
      * 
      * @param   Array   params
      * 
@@ -103,7 +103,7 @@ class Serie
 
     /**
      * Lists the series by document type
-     * https://facturalusa.pt/documentacao/api#administracao-series-por-tipo-documento
+     * https://facturalusa.pt/documentacao/api/administracao-series/por-tipo-documento
      * 
      * @param   Array   params
      * 

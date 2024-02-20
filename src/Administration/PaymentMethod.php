@@ -23,7 +23,7 @@ class PaymentMethod
 
     /**
      * Creates a new payment method
-     * https://facturalusa.pt/documentacao/api#administracao-formaspagamento-criar
+     * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class PaymentMethod
 
     /**
      * Updates an existing payment method
-     * https://facturalusa.pt/documentacao/api#administracao-formaspagamento-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class PaymentMethod
 
     /**
      * Deletes an existing payment method
-     * https://facturalusa.pt/documentacao/api#administracao-formaspagamento-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/eliminar
      * 
      * @param   Integer id
      */
@@ -61,7 +61,7 @@ class PaymentMethod
 
     /**
      * Finds a payment method
-     * https://facturalusa.pt/documentacao/api#administracao-formaspagamento-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/procurar
      * 
      * @param   Array   params
      * 
@@ -74,7 +74,7 @@ class PaymentMethod
 
     /**
      * Lists the paymentmethods
-     * https://facturalusa.pt/documentacao/api#administracao-formaspagamento-lista
+     * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/lista
      * 
      * @param   Array   params
      * 

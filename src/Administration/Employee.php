@@ -23,7 +23,7 @@ class Employee
 
     /**
      * Creates a new employee
-     * https://facturalusa.pt/documentacao/api#administracao-colaboradores-criar
+     * https://facturalusa.pt/documentacao/api/administracao-colaboradores/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Employee
 
     /**
      * Updates an existing employee
-     * https://facturalusa.pt/documentacao/api#administracao-colaboradores-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-colaboradores/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Employee
 
     /**
      * Deletes an existing employee
-     * https://facturalusa.pt/documentacao/api#administracao-colaboradores-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-colaboradores/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Employee
 
     /**
      * Finds a employee
-     * https://facturalusa.pt/documentacao/api#administracao-colaboradores-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-colaboradores/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Employee
 
     /**
      * Lists the employees
-     * https://facturalusa.pt/documentacao/api#administracao-colaboradores-lista
+     * https://facturalusa.pt/documentacao/api/administracao-colaboradores/lista
      * 
      * @param   Array   params
      * 

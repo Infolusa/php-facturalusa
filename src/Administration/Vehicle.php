@@ -23,7 +23,7 @@ class Vehicle
 
     /**
      * Creates a new vehicle
-     * https://facturalusa.pt/documentacao/api#administracao-veiculos-criar
+     * https://facturalusa.pt/documentacao/api/administracao-veiculos/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Vehicle
 
     /**
      * Updates an existing vehicle
-     * https://facturalusa.pt/documentacao/api#administracao-veiculos-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-veiculos/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Vehicle
 
     /**
      * Deletes an existing vehicle
-     * https://facturalusa.pt/documentacao/api#administracao-veiculos-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-veiculos/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Vehicle
 
     /**
      * Finds a vehicle
-     * https://facturalusa.pt/documentacao/api#administracao-veiculos-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-veiculos/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Vehicle
 
     /**
      * Lists the vehicles
-     * https://facturalusa.pt/documentacao/api#administracao-veiculos-lista
+     * https://facturalusa.pt/documentacao/api/administracao-veiculos/lista
      * 
      * @param   Array   params
      * 

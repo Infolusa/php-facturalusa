@@ -23,7 +23,7 @@ class Category
 
     /**
      * Creates a new category
-     * https://facturalusa.pt/documentacao/api#administracao-categorias-criar
+     * https://facturalusa.pt/documentacao/api/administracao-categorias/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Category
 
     /**
      * Updates an existing category
-     * https://facturalusa.pt/documentacao/api#administracao-categorias-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-categorias/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Category
 
     /**
      * Deletes an existing category
-     * https://facturalusa.pt/documentacao/api#administracao-categorias-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-categorias/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Category
 
     /**
      * Finds a category
-     * https://facturalusa.pt/documentacao/api#administracao-categorias-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-categorias/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Category
 
     /**
      * Lists the categories
-     * https://facturalusa.pt/documentacao/api#administracao-categorias-lista
+     * https://facturalusa.pt/documentacao/api/administracao-categorias/lista
      * 
      * @param   Array   params
      * 

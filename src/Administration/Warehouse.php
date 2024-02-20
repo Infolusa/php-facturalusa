@@ -23,7 +23,7 @@ class Warehouse
 
     /**
      * Creates a new warehouse
-     * https://facturalusa.pt/documentacao/api#administracao-armazens-criar
+     * https://facturalusa.pt/documentacao/api/administracao-armazens/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Warehouse
 
     /**
      * Updates an existing warehouse
-     * https://facturalusa.pt/documentacao/api#administracao-armazens-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-armazens/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Warehouse
 
     /**
      * Deletes an existing warehouse
-     * https://facturalusa.pt/documentacao/api#administracao-armazens-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-armazens/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Warehouse
 
     /**
      * Finds a warehouse
-     * https://facturalusa.pt/documentacao/api#administracao-armazens-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-armazens/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Warehouse
 
     /**
      * Lists the warehouses
-     * https://facturalusa.pt/documentacao/api#administracao-armazens-lista
+     * https://facturalusa.pt/documentacao/api/administracao-armazens/lista
      * 
      * @param   Array   params
      * 

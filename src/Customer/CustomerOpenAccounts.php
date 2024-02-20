@@ -23,7 +23,7 @@ class CustomerOpenAccounts
 
     /**
      * Gets the list of open accounts for an existing customer
-     * https://facturalusa.pt/documentacao/api#clientes-contas-aberto-singular
+     * https://facturalusa.pt/documentacao/api/clientes-contas-em-aberto/por-cliente
      * 
      * @param   Integer id
      * 
@@ -36,7 +36,7 @@ class CustomerOpenAccounts
 
     /**
      * Allows the download of a PDF file about the list of open accounts for an existing customer
-     * https://facturalusa.pt/documentacao/api#clientes-contas-aberto-download
+     * https://facturalusa.pt/documentacao/api/clientes-contas-em-aberto/download
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class CustomerOpenAccounts
 
     /**
      * Sends an email to the customer with all the open accounts
-     * https://facturalusa.pt/documentacao/api#clientes-contas-aberto-enviar-email
+     * https://facturalusa.pt/documentacao/api/clientes-contas-em-aberto/enviar-email
      * 
      * @param   Integer id
      * @param   Array   params
@@ -64,7 +64,7 @@ class CustomerOpenAccounts
 
     /**
      * Returns all the open accounts from all customers
-     * https://facturalusa.pt/documentacao/api#clientes-contas-aberto-lista
+     * https://facturalusa.pt/documentacao/api/clientes-contas-em-aberto/lista
      * 
      * @param   Array   params
      * 

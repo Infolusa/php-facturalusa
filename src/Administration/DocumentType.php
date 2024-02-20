@@ -23,7 +23,7 @@ class DocumentType
 
     /**
      * Updates an existing document type
-     * https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-tipos-documento/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -37,7 +37,7 @@ class DocumentType
 
     /**
      * Finds a document type
-     * https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-tipos-documento/procurar
      * 
      * @param   Array   params
      * 
@@ -50,7 +50,7 @@ class DocumentType
 
     /**
      * Lists the documentstypes
-     * https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-lista
+     * https://facturalusa.pt/documentacao/api/administracao-tipos-documento/lista
      * 
      * @param   Array   params
      * 
@@ -63,7 +63,7 @@ class DocumentType
 
     /**
      * Communicates a serie by document type to Autoridade Tributária Services
-     * https://facturalusa.pt/documentacao/api#administracao-tiposdocumento-comunicar-serie
+     * https://facturalusa.pt/documentacao/api/administracao-tipos-documento/comunicar-serie
      * 
      * @param   Integer id
      * @param   Integer serieId

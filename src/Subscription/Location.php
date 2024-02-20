@@ -23,7 +23,7 @@ class Location
 
     /**
      * Creates a new location
-     * https://facturalusa.pt/documentacao/api#subscricao-locais-criar
+     * https://facturalusa.pt/documentacao/api/subscricao-locais/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Location
 
     /**
      * Updates an existing location
-     * https://facturalusa.pt/documentacao/api#subscricao-locais-actualizar
+     * https://facturalusa.pt/documentacao/api/subscricao-locais/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Location
 
     /**
      * Deletes an existing location
-     * https://facturalusa.pt/documentacao/api#subscricao-locais-eliminar
+     * https://facturalusa.pt/documentacao/api/subscricao-locais/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Location
 
     /**
      * Finds a location
-     * https://facturalusa.pt/documentacao/api#subscricao-locais-procurar
+     * https://facturalusa.pt/documentacao/api/subscricao-locais/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Location
 
     /**
      * Lists the locations
-     * https://facturalusa.pt/documentacao/api#subscricao-locais-lista
+     * https://facturalusa.pt/documentacao/api/subscricao-locais/lista
      * 
      * @param   Array   params
      * 

@@ -23,7 +23,7 @@ class Receipt
 
     /**
      * Creates a new receipt
-     * https://facturalusa.pt/documentacao/api#recibos
+     * https://facturalusa.pt/documentacao/api/recibos/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Receipt
 
     /**
      * Updates an existing receipt
-     * https://facturalusa.pt/documentacao/api#recibos-actualizar
+     * https://facturalusa.pt/documentacao/api/recibos/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Receipt
 
     /**
      * Deletes an existing receipt
-     * https://facturalusa.pt/documentacao/api#recibos-eliminar
+     * https://facturalusa.pt/documentacao/api/recibos/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Receipt
 
     /**
      * Cancels an existing receipt
-     * https://facturalusa.pt/documentacao/api#recibos-cancelar
+     * https://facturalusa.pt/documentacao/api/recibos/cancelar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -77,7 +77,7 @@ class Receipt
 
     /**
      * Downloads the receipt document
-     * https://facturalusa.pt/documentacao/api#recibos-download
+     * https://facturalusa.pt/documentacao/api/recibos/download
      * 
      * @param   Integer id
      * @param   Array   params
@@ -91,7 +91,7 @@ class Receipt
 
     /**
      * Sends an email 
-     * https://facturalusa.pt/documentacao/api#recibos-enviar-email
+     * https://facturalusa.pt/documentacao/api/recibos/enviar-email
      * 
      * @param   Integer id
      * @param   Array   params
@@ -105,7 +105,7 @@ class Receipt
 
     /**
      * Sends an sms
-     * https://facturalusa.pt/documentacao/api#recibos-enviar-sms
+     * https://facturalusa.pt/documentacao/api/recibos/enviar-sms
      * 
      * @param   Integer id
      * @param   Array   params
@@ -119,7 +119,7 @@ class Receipt
 
     /**
      * Signs a document
-     * https://facturalusa.pt/documentacao/api#recibos-assinar-digitalmente
+     * https://facturalusa.pt/documentacao/api/recibos/assinar-digitalmente
      * 
      * @param   Integer id
      * @param   Array   params
@@ -133,7 +133,7 @@ class Receipt
 
     /**
      * Allows to calculate in-real-time the totals of a document
-     * https://facturalusa.pt/documentacao/api#recibos-sumario
+     * https://facturalusa.pt/documentacao/api/recibos/sumario
      * 
      * @param   Array   params
      * 
@@ -146,7 +146,7 @@ class Receipt
 
     /**
      * Finds a receipt
-     * https://facturalusa.pt/documentacao/api#recibos-procurar
+     * https://facturalusa.pt/documentacao/api/recibos/procurar
      * 
      * @param   Array   params
      * 
@@ -159,7 +159,7 @@ class Receipt
 
     /**
      * Lists the receipts
-     * https://facturalusa.pt/documentacao/api#recibos-lista
+     * https://facturalusa.pt/documentacao/api/recibos/lista
      * 
      * @param   Array   params
      * 

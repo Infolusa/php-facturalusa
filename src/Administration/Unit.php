@@ -23,7 +23,7 @@ class Unit
 
     /**
      * Creates a new unit
-     * https://facturalusa.pt/documentacao/api#administracao-unidades-criar
+     * https://facturalusa.pt/documentacao/api/administracao-unidades/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Unit
 
     /**
      * Updates an existing unit
-     * https://facturalusa.pt/documentacao/api#administracao-unidades-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-unidades/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Unit
 
     /**
      * Deletes an existing unit
-     * https://facturalusa.pt/documentacao/api#administracao-unidades-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-unidades/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Unit
 
     /**
      * Finds a unit
-     * https://facturalusa.pt/documentacao/api#administracao-unidades-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-unidades/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Unit
 
     /**
      * Lists the units
-     * https://facturalusa.pt/documentacao/api#administracao-unidades-lista
+     * https://facturalusa.pt/documentacao/api/administracao-unidades/lista
      * 
      * @param   Array   params
      * 

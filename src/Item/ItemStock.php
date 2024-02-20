@@ -23,7 +23,7 @@ class ItemStock
 
     /**
      * Creates a new item stock
-     * https://facturalusa.pt/documentacao/api#artigos-stock-movimentos-criar
+     * https://facturalusa.pt/documentacao/api/artigos-movimentos-stock/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class ItemStock
 
     /**
      * Updates an existing item stock
-     * https://facturalusa.pt/documentacao/api#artigos-stock-movimentos-actualizar
+     * https://facturalusa.pt/documentacao/api/artigos-movimentos-stock/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class ItemStock
 
     /**
      * Deletes an existing item stock
-     * https://facturalusa.pt/documentacao/api#artigos-stock-movimentos-eliminar
+     * https://facturalusa.pt/documentacao/api/artigos-movimentos-stock/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class ItemStock
 
     /**
      * Returns the current stock
-     * https://facturalusa.pt/documentacao/api#artigos-stock-actual
+     * https://facturalusa.pt/documentacao/api/artigos-stock/actual
      * 
      * @param   Integer id
      * 

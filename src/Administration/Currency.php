@@ -23,7 +23,7 @@ class Currency
 
     /**
      * Creates a new currency
-     * https://facturalusa.pt/documentacao/api#administracao-moedas-criar
+     * https://facturalusa.pt/documentacao/api/administracao-moedas/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Currency
 
     /**
      * Updates an existing currency
-     * https://facturalusa.pt/documentacao/api#administracao-moedas-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-moedas/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Currency
 
     /**
      * Deletes an existing currency
-     * https://facturalusa.pt/documentacao/api#administracao-moedas-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-moedas/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Currency
 
     /**
      * Finds a currency
-     * https://facturalusa.pt/documentacao/api#administracao-moedas-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-moedas/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Currency
 
     /**
      * Lists the currencies
-     * https://facturalusa.pt/documentacao/api#administracao-moedas-lista
+     * https://facturalusa.pt/documentacao/api/administracao-moedas/lista
      * 
      * @param   Array   params
      * 

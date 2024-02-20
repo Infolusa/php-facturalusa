@@ -23,7 +23,7 @@ class Item
 
     /**
      * Creates a new item
-     * https://facturalusa.pt/documentacao/api#artigos
+     * https://facturalusa.pt/documentacao/api/artigos
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Item
 
     /**
      * Updates an existing item
-     * https://facturalusa.pt/documentacao/api#artigos-actualizar
+     * https://facturalusa.pt/documentacao/api/artigos/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Item
 
     /**
      * Deletes an existing item
-     * https://facturalusa.pt/documentacao/api#artigos-eliminar
+     * https://facturalusa.pt/documentacao/api/artigos/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Item
 
     /**
      * Deletes the image from the item
-     * https://facturalusa.pt/documentacao/api#artigos-eliminar-imagem
+     * https://facturalusa.pt/documentacao/api/artigos/eliminar-imagem
      * 
      * @param   Integer id
      * 
@@ -76,7 +76,7 @@ class Item
 
     /**
      * Finds a item
-     * https://facturalusa.pt/documentacao/api#artigos-procurar
+     * https://facturalusa.pt/documentacao/api/artigos/procurar
      * 
      * @param   Array   params
      * 
@@ -89,7 +89,7 @@ class Item
 
     /**
      * Lists the items
-     * https://facturalusa.pt/documentacao/api#artigos-lista
+     * https://facturalusa.pt/documentacao/api/artigos/lista
      * 
      * @param   Array   params
      * 

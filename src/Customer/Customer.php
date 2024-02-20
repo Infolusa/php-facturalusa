@@ -23,7 +23,7 @@ class Customer
 
     /**
      * Creates a new customer
-     * https://facturalusa.pt/documentacao/api#clientes
+     * https://facturalusa.pt/documentacao/api/clientes/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Customer
 
     /**
      * Updates an existing customer
-     * https://facturalusa.pt/documentacao/api#clientes-actualizar
+     * https://facturalusa.pt/documentacao/api/clientes/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Customer
 
     /**
      * Deletes an existing customer
-     * https://facturalusa.pt/documentacao/api#clientes-eliminar
+     * https://facturalusa.pt/documentacao/api/clientes/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Customer
 
     /**
      * Finds a customer
-     * https://facturalusa.pt/documentacao/api#clientes-procurar
+     * https://facturalusa.pt/documentacao/api/clientes/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Customer
 
     /**
      * Lists the customers
-     * https://facturalusa.pt/documentacao/api#clientes-lista
+     * https://facturalusa.pt/documentacao/api/clientes/lista
      * 
      * @param   Array   params
      * 

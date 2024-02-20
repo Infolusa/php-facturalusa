@@ -23,7 +23,7 @@ class VatRate
 
     /**
      * Creates a new vat rate
-     * https://facturalusa.pt/documentacao/api#administracao-taxasiva-criar
+     * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class VatRate
 
     /**
      * Updates an existing vat rate
-     * https://facturalusa.pt/documentacao/api#administracao-taxasiva-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class VatRate
 
     /**
      * Deletes an existing vat rate
-     * https://facturalusa.pt/documentacao/api#administracao-taxasiva-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class VatRate
 
     /**
      * Finds a vat rate
-     * https://facturalusa.pt/documentacao/api#administracao-taxasiva-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class VatRate
 
     /**
      * Lists the vatrates
-     * https://facturalusa.pt/documentacao/api#administracao-taxasiva-lista
+     * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/lista
      * 
      * @param   Array   params
      * 

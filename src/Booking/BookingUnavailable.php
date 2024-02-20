@@ -23,7 +23,7 @@ class BookingUnavailable
 
     /**
      * Creates a new booking unavailable
-     * https://facturalusa.pt/documentacao/api#agenda-indisponibilidades
+     * https://facturalusa.pt/documentacao/api/agenda-indisponibilidades/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class BookingUnavailable
 
     /**
      * Updates an existing booking unavailable
-     * https://facturalusa.pt/documentacao/api#agenda-indisponibilidades-actualizar
+     * https://facturalusa.pt/documentacao/api/agenda-indisponibilidades/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class BookingUnavailable
 
     /**
      * Deletes an existing booking unavailable
-     * https://facturalusa.pt/documentacao/api#agenda-indisponibilidades-eliminar
+     * https://facturalusa.pt/documentacao/api/agenda-indisponibilidades/eliminar
      * 
      * @param   Integer id
      * 

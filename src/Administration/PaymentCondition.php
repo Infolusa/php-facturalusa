@@ -23,7 +23,7 @@ class PaymentCondition
 
     /**
      * Creates a new payment condition
-     * https://facturalusa.pt/documentacao/api#administracao-condicoespagamento-criar
+     * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class PaymentCondition
 
     /**
      * Updates an existing payment condition
-     * https://facturalusa.pt/documentacao/api#administracao-condicoespagamento-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class PaymentCondition
 
     /**
      * Deletes an existing payment condition
-     * https://facturalusa.pt/documentacao/api#administracao-condicoespagamento-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class PaymentCondition
 
     /**
      * Finds a payment condition
-     * https://facturalusa.pt/documentacao/api#administracao-condicoespagamento-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class PaymentCondition
 
     /**
      * Lists the paymentconditions
-     * https://facturalusa.pt/documentacao/api#administracao-condicoespagamento-lista
+     * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/lista
      * 
      * @param   Array   params
      * 

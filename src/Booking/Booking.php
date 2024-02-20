@@ -23,7 +23,7 @@ class Booking
 
     /**
      * Creates a new booking
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Booking
 
     /**
      * Updates an existing booking
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-actualizar
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Booking
 
     /**
      * Updates an existing booking date
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-actualizar-data
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/actualizar-data
      * 
      * @param   Integer id
      * @param   Array   params
@@ -64,7 +64,7 @@ class Booking
 
     /**
      * Deletes an existing booking
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-eliminar
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/eliminar
      * 
      * @param   Integer id
      * 
@@ -77,7 +77,7 @@ class Booking
 
     /**
      * Creates an invoice for an existing booking
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-criar-documento
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/criar-documento
      * 
      * @param   Integer id
      * @param   Array   params
@@ -91,7 +91,7 @@ class Booking
 
     /**
      * Checks the availability of a date
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-verificar-disponibilidade
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/verificar-disponibilidade
      * 
      * @param   Array   params
      * 
@@ -104,7 +104,7 @@ class Booking
 
     /**
      * Allows to calculate in-real-time the totals of a booking
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-sumario
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/sumario
      * 
      * @param   Array   params
      * 
@@ -117,7 +117,7 @@ class Booking
 
     /**
      * Finds a booking
-     * https://facturalusa.pt/documentacao/api#agenda-marcacoes-procurar
+     * https://facturalusa.pt/documentacao/api/agenda-marcacoes/procurar
      * 
      * @param   Array   params
      * 

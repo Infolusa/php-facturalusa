@@ -23,7 +23,7 @@ class Price
 
     /**
      * Creates a new price
-     * https://facturalusa.pt/documentacao/api#administracao-precos-criar
+     * https://facturalusa.pt/documentacao/api/administracao-precos/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Price
 
     /**
      * Updates an existing price
-     * https://facturalusa.pt/documentacao/api#administracao-precos-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-precos/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Price
 
     /**
      * Deletes an existing price
-     * https://facturalusa.pt/documentacao/api#administracao-precos-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-precos/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Price
 
     /**
      * Finds a price
-     * https://facturalusa.pt/documentacao/api#administracao-precos-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-precos/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class Price
 
     /**
      * Lists the prices
-     * https://facturalusa.pt/documentacao/api#administracao-precos-lista
+     * https://facturalusa.pt/documentacao/api/administracao-precos/lista
      * 
      * @param   Array   params
      * 

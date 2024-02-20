@@ -23,7 +23,7 @@ class ShippingMode
 
     /**
      * Creates a new shipping mode
-     * https://facturalusa.pt/documentacao/api#administracao-modosexpedicao-criar
+     * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class ShippingMode
 
     /**
      * Updates an existing shipping mode
-     * https://facturalusa.pt/documentacao/api#administracao-modosexpedicao-actualizar
+     * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class ShippingMode
 
     /**
      * Deletes an existing shipping mode
-     * https://facturalusa.pt/documentacao/api#administracao-modosexpedicao-eliminar
+     * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class ShippingMode
 
     /**
      * Finds a shipping mode
-     * https://facturalusa.pt/documentacao/api#administracao-modosexpedicao-procurar
+     * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/procurar
      * 
      * @param   Array   params
      * 
@@ -76,7 +76,7 @@ class ShippingMode
 
     /**
      * Lists the shippingmodes
-     * https://facturalusa.pt/documentacao/api#administracao-modosexpedicao-lista
+     * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/lista
      * 
      * @param   Array   params
      * 

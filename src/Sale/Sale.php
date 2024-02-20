@@ -23,7 +23,7 @@ class Sale
 
     /**
      * Creates a new sale
-     * https://facturalusa.pt/documentacao/api#vendas
+     * https://facturalusa.pt/documentacao/api/vendas/criar
      * 
      * @param   Array   params
      * 
@@ -36,7 +36,7 @@ class Sale
 
     /**
      * Updates an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-actualizar
+     * https://facturalusa.pt/documentacao/api/vendas/actualizar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -50,7 +50,7 @@ class Sale
 
     /**
      * Deletes an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-eliminar
+     * https://facturalusa.pt/documentacao/api/vendas/eliminar
      * 
      * @param   Integer id
      * 
@@ -63,7 +63,7 @@ class Sale
 
     /**
      * Cancels an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-cancelar
+     * https://facturalusa.pt/documentacao/api/vendas/cancelar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -77,7 +77,7 @@ class Sale
 
     /**
      * Duplicates an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-duplicar
+     * https://facturalusa.pt/documentacao/api/vendas/duplicar
      * 
      * @param   Integer id
      * @param   Array   params
@@ -91,7 +91,7 @@ class Sale
 
     /**
      * Creates a receipt based on an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-recibo
+     * https://facturalusa.pt/documentacao/api/vendas/recibo
      * 
      * @param   Integer id
      * @param   Array   params
@@ -105,7 +105,7 @@ class Sale
 
     /**
      * Creates a credit note of an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-nota-credito
+     * https://facturalusa.pt/documentacao/api/vendas/nota-credito
      * 
      * @param   Integer id
      * 
@@ -118,7 +118,7 @@ class Sale
 
     /**
      * Creates a debit note of an existing sale
-     * https://facturalusa.pt/documentacao/api#vendas-nota-debito
+     * https://facturalusa.pt/documentacao/api/vendas/nota-debito
      * 
      * @param   Integer id
      * 
@@ -131,7 +131,7 @@ class Sale
 
     /**
      * Downloads the sale document
-     * https://facturalusa.pt/documentacao/api#vendas-download
+     * https://facturalusa.pt/documentacao/api/vendas/download
      * 
      * @param   Integer id
      * @param   Array   params
@@ -145,7 +145,7 @@ class Sale
 
     /**
      * Sends an email 
-     * https://facturalusa.pt/documentacao/api#vendas-enviar-email
+     * https://facturalusa.pt/documentacao/api/vendas/enviar-email
      * 
      * @param   Integer id
      * @param   Array   params
@@ -159,7 +159,7 @@ class Sale
 
     /**
      * Sends an sms
-     * https://facturalusa.pt/documentacao/api#vendas-enviar-sms
+     * https://facturalusa.pt/documentacao/api/vendas/enviar-sms
      * 
      * @param   Integer id
      * @param   Array   params
@@ -173,7 +173,7 @@ class Sale
 
     /**
      * Signs a document
-     * https://facturalusa.pt/documentacao/api#vendas-assinar-digitalmente
+     * https://facturalusa.pt/documentacao/api/vendas/assinar-digitalmente
      * 
      * @param   Integer id
      * @param   Array   params
@@ -187,7 +187,7 @@ class Sale
 
     /**
      * Generates MB reference
-     * https://facturalusa.pt/documentacao/api#vendas-gerar-ref-multibanco
+     * https://facturalusa.pt/documentacao/api/vendas/gerar-ref-multibanco
      * 
      * @param   Integer id
      * 
@@ -200,7 +200,7 @@ class Sale
 
     /**
      * Generates a MBWay
-     * https://facturalusa.pt/documentacao/api#vendas-gerar-mbway
+     * https://facturalusa.pt/documentacao/api/vendas/gerar-mbway
      * 
      * @param   Integer id
      * 
@@ -213,7 +213,7 @@ class Sale
 
     /**
      * Allows to calculate in-real-time the totals of a document
-     * https://facturalusa.pt/documentacao/api#vendas-sumario
+     * https://facturalusa.pt/documentacao/api/vendas/sumario
      * 
      * @param   Array   params
      * 
@@ -226,7 +226,7 @@ class Sale
 
     /**
      * Finds a sale
-     * https://facturalusa.pt/documentacao/api#vendas-procurar
+     * https://facturalusa.pt/documentacao/api/vendas/procurar
      * 
      * @param   Array   params
      * 
@@ -239,7 +239,7 @@ class Sale
 
     /**
      * Lists the sales
-     * https://facturalusa.pt/documentacao/api#vendas-lista
+     * https://facturalusa.pt/documentacao/api/vendas/lista
      * 
      * @param   Array   params
      * 
