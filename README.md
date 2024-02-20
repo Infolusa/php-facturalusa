@@ -1,5 +1,5 @@
 # PHP - Facturalusa
-Biblioteca para ajudar na interacção com o Software de Facturação Online www.facturalusa.pt via PHP. 
+SDK PHP para ajudar na integração com o Software de Facturação Online www.facturalusa.pt 
 
 Visualize a API em https://facturalusa.pt/documentacao/api
 
@@ -15,7 +15,7 @@ $ composer require infolusa/php-facturalusa
 ```
 
 ## Endpoints
-Todos os endpoints listados na documentação oficial estão disponíveis para utilizar nesta biblioteca. Os parâmetros a serem preenchidos no ```$array``` devem ser consultados na API.
+Todos os endpoints listados na documentação oficial estão disponíveis para utilizar neste SDK. Os parâmetros a serem preenchidos no ```$array``` devem ser consultados na API.
 
 #### Exemplo prático
 ```php
