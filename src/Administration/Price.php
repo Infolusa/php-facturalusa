@@ -24,66 +24,36 @@ class Price
     /**
      * Creates a new price
      * https://facturalusa.pt/documentacao/api/administracao-precos/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/prices/create', 'POST', $params);
+        return $this->facturalusa->request('administration/prices', 'POST', $params);
     }
 
     /**
      * Updates an existing price
      * https://facturalusa.pt/documentacao/api/administracao-precos/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/prices/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/prices/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing price
      * https://facturalusa.pt/documentacao/api/administracao-precos/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/prices/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/prices/{$id}", 'DELETE');
     }
 
     /**
      * Finds a price
      * https://facturalusa.pt/documentacao/api/administracao-precos/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/prices/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the prices
-     * https://facturalusa.pt/documentacao/api/administracao-precos/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/prices/list', 'POST', $params);
     }
 }

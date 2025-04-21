@@ -24,66 +24,36 @@ class PaymentCondition
     /**
      * Creates a new payment condition
      * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/paymentconditions/create', 'POST', $params);
+        return $this->facturalusa->request('administration/paymentconditions', 'POST', $params);
     }
 
     /**
      * Updates an existing payment condition
      * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/paymentconditions/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/paymentconditions/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing payment condition
      * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/paymentconditions/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/paymentconditions/{$id}", 'DELETE');
     }
 
     /**
      * Finds a payment condition
      * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/paymentconditions/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the paymentconditions
-     * https://facturalusa.pt/documentacao/api/administracao-condicoes-pagamento/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/paymentconditions/list', 'POST', $params);
     }
 }

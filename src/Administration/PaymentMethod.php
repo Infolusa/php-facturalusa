@@ -24,64 +24,36 @@ class PaymentMethod
     /**
      * Creates a new payment method
      * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/paymentmethods/create', 'POST', $params);
+        return $this->facturalusa->request('administration/paymentmethods', 'POST', $params);
     }
 
     /**
      * Updates an existing payment method
      * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/paymentmethods/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/paymentmethods/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing payment method
      * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/eliminar
-     * 
-     * @param   Integer id
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/paymentmethods/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/paymentmethods/{$id}", 'DELETE');
     }
 
     /**
      * Finds a payment method
      * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/paymentmethods/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the paymentmethods
-     * https://facturalusa.pt/documentacao/api/administracao-formas-pagamento/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/paymentmethods/list', 'POST', $params);
     }
 }

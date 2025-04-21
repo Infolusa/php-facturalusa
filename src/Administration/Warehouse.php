@@ -24,66 +24,36 @@ class Warehouse
     /**
      * Creates a new warehouse
      * https://facturalusa.pt/documentacao/api/administracao-armazens/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/warehouses/create', 'POST', $params);
+        return $this->facturalusa->request('administration/warehouses', 'POST', $params);
     }
 
     /**
      * Updates an existing warehouse
      * https://facturalusa.pt/documentacao/api/administracao-armazens/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/warehouses/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/warehouses/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing warehouse
      * https://facturalusa.pt/documentacao/api/administracao-armazens/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/warehouses/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/warehouses/{$id}", 'DELETE');
     }
 
     /**
      * Finds a warehouse
      * https://facturalusa.pt/documentacao/api/administracao-armazens/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/warehouses/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the warehouses
-     * https://facturalusa.pt/documentacao/api/administracao-armazens/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/warehouses/list', 'POST', $params);
     }
 }

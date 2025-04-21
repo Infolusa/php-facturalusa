@@ -24,66 +24,36 @@ class Unit
     /**
      * Creates a new unit
      * https://facturalusa.pt/documentacao/api/administracao-unidades/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/units/create', 'POST', $params);
+        return $this->facturalusa->request('administration/units', 'POST', $params);
     }
 
     /**
      * Updates an existing unit
      * https://facturalusa.pt/documentacao/api/administracao-unidades/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/units/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/units/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing unit
      * https://facturalusa.pt/documentacao/api/administracao-unidades/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/units/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/units/{$id}", 'DELETE');
     }
 
     /**
      * Finds a unit
      * https://facturalusa.pt/documentacao/api/administracao-unidades/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/units/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the units
-     * https://facturalusa.pt/documentacao/api/administracao-unidades/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/units/list', 'POST', $params);
     }
 }

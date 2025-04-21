@@ -8,78 +8,62 @@ class FacturalusaClient Implements FacturalusaResponse
 {
     /**
      * Holds the API URL
-     * 
+     *
      * @var String
      */
-    const API_URL = 'https://facturalusa.pt/api/v1/';
+    const API_URL = 'https://facturalusa.pt/api/v2/';
 
     /**
-     * Holds the CURL Headers
-     * 
-     * @var Array
-     */
-    const CURL_HEADERS = 
-    [
-        'Accept: application/json',
-        'Content-Type: application/json',
-    ];
-
-    /**
-     * Holds the API Access Token
-     * 
+     * Holds the API Bearer Access Token
+     *
      * @var String
      */
     private $apiToken;
 
     /**
-     * Holds the http code
+     * Holds the http status code
      * 
      * @var Integer
      */
-    private $httpcode;
+    private $statusCode;
 
     /**
      * Holds the response message
      * 
-     * @var Array
+     * @var mixed
      */
     private $response;
 
     /**
      * Initializes the constructor
-     * 
-     * @param   String  Sets the API token
      */
-    public function __construct($apiToken = '')
+    public function __construct(string $apiToken)
     {
         $this->apiToken = $apiToken;
     }
 
     /**
      * Executes a request to the API
-     *
-     * @param   String  Action
-     * @param   String  Type of request (POST, GET, PUT)
-     * @param   Array   List of params to send
      */
-    public function request($action, $type, $params = [])
+    public function request(string $action, string $type, array $params = [])
     {
-        // Append the API token
-        $params['api_token'] = $this->apiToken;
-
         $ch = curl_init(self::API_URL . $action);
 
-		curl_setopt($ch, CURLOPT_HTTPHEADER, self::CURL_HEADERS);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            "Authorization: Bearer {$this->apiToken}",
+            'Accept: application/json',
+            'Content-Type: application/json',
+        ]);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
         $response = curl_exec($ch);
-        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
         curl_close($ch);
 
-        $this->httpcode = $httpcode;
+        $this->statusCode = $statusCode;
         $this->response = json_decode($response);
 
         return $this->response;
@@ -87,28 +71,24 @@ class FacturalusaClient Implements FacturalusaResponse
 
     /**
      * Returns if the request has failed
-     * 
-     * @return  Boolean
      */
-    public function fail()
+    public function fail(): bool
     {
-        return $this->httpcode != 200;
+        return !$this->success();
     }
 
     /**
      * Returns if the request has succeeded
-     * 
-     * @return  Boolean
      */
-    public function success()
+    public function success(): bool
     {
-        return $this->httpcode == 200;
+        return in_array($this->statusCode, [200, 201, 204]);
     }
 
     /**
      * Returns the request response
-     * 
-     * @return  Array
+     *
+     * @return mixed
      */
     public function response()
     {

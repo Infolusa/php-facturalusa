@@ -2,19 +2,19 @@
 
 namespace Facturalusa\Administration;
 
+use Facturalusa\FacturalusaClient;
+
 class Category
 {
     /**
      * Holds the Facturalusa Client
-     * 
+     *
      * @var FacturalusaClient
      */
     private $facturalusa;
 
     /**
      * Initializes the constructor
-     * 
-     * @param   Facturalusa
      */
     public function __construct(\Facturalusa\FacturalusaClient $facturalusa)
     {
@@ -24,66 +24,36 @@ class Category
     /**
      * Creates a new category
      * https://facturalusa.pt/documentacao/api/administracao-categorias/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/categories/create', 'POST', $params);
+        return $this->facturalusa->request('administration/categories', 'POST', $params);
     }
 
     /**
      * Updates an existing category
      * https://facturalusa.pt/documentacao/api/administracao-categorias/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/categories/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/categories/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing category
      * https://facturalusa.pt/documentacao/api/administracao-categorias/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/categories/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/categories/{$id}", 'DELETE');
     }
 
     /**
      * Finds a category
      * https://facturalusa.pt/documentacao/api/administracao-categorias/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/categories/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the categories
-     * https://facturalusa.pt/documentacao/api/administracao-categorias/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/categories/list', 'POST', $params);
     }
 }

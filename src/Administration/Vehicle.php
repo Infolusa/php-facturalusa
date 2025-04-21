@@ -24,66 +24,36 @@ class Vehicle
     /**
      * Creates a new vehicle
      * https://facturalusa.pt/documentacao/api/administracao-veiculos/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/vehicles/create', 'POST', $params);
+        return $this->facturalusa->request('administration/vehicles', 'POST', $params);
     }
 
     /**
      * Updates an existing vehicle
      * https://facturalusa.pt/documentacao/api/administracao-veiculos/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/vehicles/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/vehicles/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing vehicle
      * https://facturalusa.pt/documentacao/api/administracao-veiculos/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/vehicles/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/vehicles/{$id}", 'DELETE');
     }
 
     /**
      * Finds a vehicle
      * https://facturalusa.pt/documentacao/api/administracao-veiculos/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/vehicles/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the vehicles
-     * https://facturalusa.pt/documentacao/api/administracao-veiculos/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/vehicles/list', 'POST', $params);
     }
 }

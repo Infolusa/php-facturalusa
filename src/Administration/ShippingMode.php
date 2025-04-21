@@ -24,52 +24,35 @@ class ShippingMode
     /**
      * Creates a new shipping mode
      * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/shippingmodes/create', 'POST', $params);
+        return $this->facturalusa->request('administration/shippingmodes', 'POST', $params);
     }
 
     /**
      * Updates an existing shipping mode
      * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/shippingmodes/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/shippingmodes/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing shipping mode
      * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/shippingmodes/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/shippingmodes/{$id}", 'DELETE');
     }
 
     /**
      * Finds a shipping mode
      * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/shippingmodes/find', 'POST', $params);
     }
@@ -77,10 +60,6 @@ class ShippingMode
     /**
      * Lists the shippingmodes
      * https://facturalusa.pt/documentacao/api/administracao-modos-expedicao/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
     public function list($params = [])
     {

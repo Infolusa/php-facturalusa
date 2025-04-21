@@ -24,66 +24,36 @@ class Currency
     /**
      * Creates a new currency
      * https://facturalusa.pt/documentacao/api/administracao-moedas/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/currencies/create', 'POST', $params);
+        return $this->facturalusa->request('administration/currencies', 'POST', $params);
     }
 
     /**
      * Updates an existing currency
      * https://facturalusa.pt/documentacao/api/administracao-moedas/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/currencies/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/currencies/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing currency
      * https://facturalusa.pt/documentacao/api/administracao-moedas/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/currencies/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/currencies/{$id}", 'DELETE');
     }
 
     /**
      * Finds a currency
      * https://facturalusa.pt/documentacao/api/administracao-moedas/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/currencies/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the currencies
-     * https://facturalusa.pt/documentacao/api/administracao-moedas/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/currencies/list', 'POST', $params);
     }
 }

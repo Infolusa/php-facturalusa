@@ -24,67 +24,44 @@ class Sale
     /**
      * Creates a new sale
      * https://facturalusa.pt/documentacao/api/vendas/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('sales/create', 'POST', $params);
+        return $this->facturalusa->request('sales', 'POST', $params);
     }
 
     /**
      * Updates an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("sales/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("sales/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("sales/{$id}/delete", 'POST');
+        return $this->facturalusa->request("sales/{$id}", 'DELETE');
     }
 
     /**
      * Cancels an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/cancelar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function cancel($id, $params)
+    public function cancel(int $id, array $params)
     {
-        return $this->facturalusa->request("sales/{$id}/cancel", 'POST', $params);
+        return $this->facturalusa->request("sales/{$id}/cancel", 'PUT', $params);
     }
 
     /**
      * Duplicates an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/duplicar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function duplicate($id, $params)
+    public function duplicate(int $id, array $params)
     {
         return $this->facturalusa->request("sales/{$id}/duplicate", 'POST', $params);
     }
@@ -92,13 +69,8 @@ class Sale
     /**
      * Creates a receipt based on an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/recibo
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function receipt($id, $params)
+    public function receipt(int $id, array $params)
     {
         return $this->facturalusa->request("sales/{$id}/receipt", 'POST', $params);
     }
@@ -106,12 +78,8 @@ class Sale
     /**
      * Creates a credit note of an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/nota-credito
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function creditNote($id)
+    public function creditNote(int $id)
     {
         return $this->facturalusa->request("sales/{$id}/credit_note", 'POST');
     }
@@ -119,12 +87,8 @@ class Sale
     /**
      * Creates a debit note of an existing sale
      * https://facturalusa.pt/documentacao/api/vendas/nota-debito
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function debitNote($id)
+    public function debitNote(int $id)
     {
         return $this->facturalusa->request("sales/{$id}/debit_note", 'POST');
     }
@@ -132,13 +96,8 @@ class Sale
     /**
      * Downloads the sale document
      * https://facturalusa.pt/documentacao/api/vendas/download
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function download($id, $params)
+    public function download(int $id, array $params)
     {
         return $this->facturalusa->request("sales/{$id}/download", 'POST', $params);
     }
@@ -146,13 +105,8 @@ class Sale
     /**
      * Sends an email 
      * https://facturalusa.pt/documentacao/api/vendas/enviar-email
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function sendEmail($id, $params)
+    public function sendEmail(int $id, array $params)
     {
         return $this->facturalusa->request("sales/{$id}/send_email", 'POST', $params);
     }
@@ -160,13 +114,8 @@ class Sale
     /**
      * Sends an sms
      * https://facturalusa.pt/documentacao/api/vendas/enviar-sms
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function sendSms($id, $params)
+    public function sendSms(int $id, array $params)
     {
         return $this->facturalusa->request("sales/{$id}/send_sms", 'POST', $params);
     }
@@ -174,52 +123,35 @@ class Sale
     /**
      * Signs a document
      * https://facturalusa.pt/documentacao/api/vendas/assinar-digitalmente
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function sign($id, $params)
+    public function sign(int $id, array $params)
     {
-        return $this->facturalusa->request("sales/{$id}/sign", 'POST', $params);
+        return $this->facturalusa->request("sales/{$id}/sign", 'PUT', $params);
     }
 
     /**
      * Generates MB reference
      * https://facturalusa.pt/documentacao/api/vendas/gerar-ref-multibanco
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
     public function generateMBReference($id)
     {
-        return $this->facturalusa->request("sales/{$id}/generate_mbref", 'POST');
+        return $this->facturalusa->request("sales/{$id}/generate_mbref", 'PUT');
     }
 
     /**
      * Generates a MBWay
      * https://facturalusa.pt/documentacao/api/vendas/gerar-mbway
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
     public function generateMBWay($id)
     {
-        return $this->facturalusa->request("sales/{$id}/generate_mbway", 'POST');
+        return $this->facturalusa->request("sales/{$id}/generate_mbway", 'PUT');
     }
 
     /**
      * Allows to calculate in-real-time the totals of a document
      * https://facturalusa.pt/documentacao/api/vendas/sumario
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function summary($params)
+    public function summary(array $params)
     {
         return $this->facturalusa->request('sales/summary', 'POST', $params);
     }
@@ -232,21 +164,8 @@ class Sale
      * 
      * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('sales/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the sales
-     * https://facturalusa.pt/documentacao/api/vendas/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('sales/list', 'POST', $params);
     }
 }

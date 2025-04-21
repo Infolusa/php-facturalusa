@@ -24,67 +24,44 @@ class Receipt
     /**
      * Creates a new receipt
      * https://facturalusa.pt/documentacao/api/recibos/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('receipts/create', 'POST', $params);
+        return $this->facturalusa->request('receipts', 'POST', $params);
     }
 
     /**
      * Updates an existing receipt
      * https://facturalusa.pt/documentacao/api/recibos/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("receipts/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("receipts/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing receipt
      * https://facturalusa.pt/documentacao/api/recibos/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("receipts/{$id}/delete", 'POST');
+        return $this->facturalusa->request("receipts/{$id}", 'DELETE');
     }
 
     /**
      * Cancels an existing receipt
      * https://facturalusa.pt/documentacao/api/recibos/cancelar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function cancel($id, $params)
+    public function cancel(int $id, array $params)
     {
-        return $this->facturalusa->request("receipts/{$id}/cancel", 'POST', $params);
+        return $this->facturalusa->request("receipts/{$id}/cancel", 'PUT', $params);
     }
 
     /**
      * Downloads the receipt document
      * https://facturalusa.pt/documentacao/api/recibos/download
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function download($id, $params)
+    public function download(int $id, array $params)
     {
         return $this->facturalusa->request("receipts/{$id}/download", 'POST', $params);
     }
@@ -92,13 +69,8 @@ class Receipt
     /**
      * Sends an email 
      * https://facturalusa.pt/documentacao/api/recibos/enviar-email
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function sendEmail($id, $params)
+    public function sendEmail(int $id, array $params)
     {
         return $this->facturalusa->request("receipts/{$id}/send_email", 'POST', $params);
     }
@@ -106,13 +78,8 @@ class Receipt
     /**
      * Sends an sms
      * https://facturalusa.pt/documentacao/api/recibos/enviar-sms
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function sendSms($id, $params)
+    public function sendSms(int $id, array $params)
     {
         return $this->facturalusa->request("receipts/{$id}/send_sms", 'POST', $params);
     }
@@ -120,26 +87,17 @@ class Receipt
     /**
      * Signs a document
      * https://facturalusa.pt/documentacao/api/recibos/assinar-digitalmente
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function sign($id, $params)
+    public function sign(int $id, array $params)
     {
-        return $this->facturalusa->request("receipts/{$id}/sign", 'POST', $params);
+        return $this->facturalusa->request("receipts/{$id}/sign", 'PUT', $params);
     }
 
     /**
      * Allows to calculate in-real-time the totals of a document
      * https://facturalusa.pt/documentacao/api/recibos/sumario
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function summary($params)
+    public function summary(array $params)
     {
         return $this->facturalusa->request('receipts/summary', 'POST', $params);
     }
@@ -147,26 +105,9 @@ class Receipt
     /**
      * Finds a receipt
      * https://facturalusa.pt/documentacao/api/recibos/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('receipts/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the receipts
-     * https://facturalusa.pt/documentacao/api/recibos/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('receipts/list', 'POST', $params);
     }
 }

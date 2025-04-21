@@ -24,66 +24,36 @@ class VatRate
     /**
      * Creates a new vat rate
      * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/criar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function create($params)
+    public function create(array $params)
     {
-        return $this->facturalusa->request('administration/vatrates/create', 'POST', $params);
+        return $this->facturalusa->request('administration/vatrates', 'POST', $params);
     }
 
     /**
      * Updates an existing vat rate
      * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/actualizar
-     * 
-     * @param   Integer id
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function update($id, $params)
+    public function update(int $id, array $params)
     {
-        return $this->facturalusa->request("administration/vatrates/{$id}/update", 'POST', $params);
+        return $this->facturalusa->request("administration/vatrates/{$id}", 'PUT', $params);
     }
 
     /**
      * Deletes an existing vat rate
      * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/eliminar
-     * 
-     * @param   Integer id
-     * 
-     * @return  Array
      */
-    public function delete($id)
+    public function delete(int $id)
     {
-        return $this->facturalusa->request("administration/vatrates/{$id}/delete", 'POST');
+        return $this->facturalusa->request("administration/vatrates/{$id}", 'DELETE');
     }
 
     /**
      * Finds a vat rate
      * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/procurar
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
      */
-    public function find($params)
+    public function find(array $params)
     {
         return $this->facturalusa->request('administration/vatrates/find', 'POST', $params);
-    }
-
-    /**
-     * Lists the vatrates
-     * https://facturalusa.pt/documentacao/api/administracao-taxas-iva/lista
-     * 
-     * @param   Array   params
-     * 
-     * @return  Array
-     */
-    public function list($params = [])
-    {
-        return $this->facturalusa->request('administration/vatrates/list', 'POST', $params);
     }
 }
