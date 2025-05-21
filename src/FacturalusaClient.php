@@ -64,7 +64,7 @@ class FacturalusaClient Implements FacturalusaResponse
         curl_close($ch);
 
         $this->statusCode = $statusCode;
-        $this->response = json_decode($response);
+        $this->response = json_decode($response, true);
 
         return $this->response;
     }
